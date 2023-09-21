@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Rubik:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+body{
+    padding: 20px 20px;
+}
+
+.card li{
+    height: 200px;
+    width: 200px;
+    list-style: none;
+    background: #fff;
+    color: #88abff;
+    border-radius: 30px;
+    padding: 15px 20px 20px;
+    border: 2px solid #3359b3; 
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.card p{
+    padding:10px 0;
+}
+
+.add-box, .icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.add-box .icon{
+    height: 78px;
+    width: 78px;
+    color: #88abff;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 2px dashed #88abff;
+}
+
+
+
+.note{
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 2px solid #333;
+    resize: both;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-break:break-all;
+    padding: 0px 15px;
+    color: rgb(25, 24, 24);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+#container{
+    margin: 0 20px;
+    height: 100vh;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media  only screen and (max-width: 575px){
+    #container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 40px;
+    }  
+}
+
+@media  only screen and (max-width: 800px){
+    #container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 40px;
+    }  
+}
+
